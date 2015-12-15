@@ -1,0 +1,48 @@
+%
+%   Simple document outline.
+%
+\documentclass[11pt,a4paper]{book}
+% Document preamble =========================
+
+\usepackage{epsfig}   % Inclusion of .eps files
+\usepackage{graphicx}
+\usepackage{calc}     % Easier calculations of dimensions
+\usepackage{mathptmx} % instead of package times...gives good fonts in pdf format
+\usepackage{helvet}   % or [scaled=0.92], if you like...good pdf fonts
+\usepackage{eurosym}  % Gives \euro command
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+
+%\pagestyle{simple}
+
+% Page spacing
+% First, undo dvi-driver offsets
+%\setlength{\hoffset}{-1.0in}
+\setlength{\voffset}{-1.0in}
+% Now specify page layout
+
+% Body height (ref. Latex Companion p.88) (better than \setlength{\textheight}{225mm})
+\setlength{\textheight}{225mm-\topskip}
+\newcounter{tempc}
+\setcounter{tempc}{\textheight}
+\newcounter{tempcc}
+\setcounter{tempcc}{\baselineskip}
+\setcounter{tempc}{\value{tempc}/\value{tempcc}}
+\setlength{\textheight}{\baselineskip*\value{tempc}+\topskip}
+
+\setlength{\textwidth}{152mm}
+\setlength{\oddsidemargin}{5mm}
+\setlength{\evensidemargin}{5mm}
+
+\setlength{\headheight}{19mm}
+\setlength{\headsep}{15mm}
+\setlength{\footskip}{5mm}
+\setlength{\marginparwidth}{0mm}
+\setlength{\marginparsep}{0mm}
+
+
+% End Document preamble =====================
+
+

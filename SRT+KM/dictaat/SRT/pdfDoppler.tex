@@ -1,0 +1,234 @@
+\chapter{Het Doppler-Effect}
+
+%%%%%%%%%%%%%%%%%
+%\section{Het klassieke Doppler-effect}
+%% Nodig: Volledige inleiding Doppler-effect!!
+
+\section{Relativistische afleiding}
+Het Doppler-effect kent iedereen uit het dagelijks leven. Wanneer een
+politie-auto met sirene aan langs ons rijdt, dan klinkt de toon van de
+sirene hoger als de auto naar ons toe rijdt en lager wanneer de auto
+zich van ons af beweegt.  Het Doppler-effect is een elementair
+verschijnsel dat optreedt bij alle trillingen die zich voortplanten.
+
+\subsection{De golfvergelijking}
+Een willekeurige golf die zich voortplant in de 1-dimensionale ruimte
+wordt beschreven door de algemene formule
+%
+\begin{equation} 
+\varphi(x,t) = A \sin(kx - \omega t) + B \cos(kx -\omega t) .
+\end{equation}
+%
+Dit geldt voor alle soorten golven: water-, geluids- of lichtgolven,
+zolang ze opgebouwd zijn uit \'e\'en enkele frequentie.
+
+De variabelen $k$ is het zogenaamde golfgetal, $\omega$ is de
+cirkelfrequentie. De constanten $A$ en $B$ bepalen de amplitude en
+beginconditie van de golf. Als we simpelweg aannemen dat op $t=0$ en
+$x = 0$ geldt $\varphi(0,0) = 0$, dan is $B = 0$. We hebben dan
+%
+\begin{equation} \label{golfVerg}
+\varphi(x,t) = A \sin(kx -\omega t).
+\end{equation}
+
+Om deze formule verder te bekijken nemen we eerst een vast tijdstip $t
+= T$. De maxima van $\varphi$ worden gegeven door
+%
+\begin{equation} \label{maxima}
+kx - \omega T = (2n + \frac{1}{2}) \pi, \qquad n = 0,1,2,\ldots
+\end{equation}
+De afstand tussen twee op elkaar volgende maxima is per definitie de
+golflengte en geven we aan met $\lambda$. Vergelijk in formule
+(\ref{maxima}) de gevallen $n = 0$ en $n = 1$ en we zien dat de
+golflengte $\lambda = 2\pi / |k|$.
+
+Als we vervolgens formule (\ref{golfVerg}) voor een vaste $x$ bekijken
+zien we dat de tijd tussen twee op elkaar volgende maxima gelijk is
+aan $2\pi / \omega$. Dit betekent dat de frequentie $\nu$ gelijk is
+aan het omgekeerde, $\nu = \omega / 2\pi$. Combinatie van golflengte
+en frequentie levert ons nu op dat de snelheid $v_g$ waarmee een
+maximum beweegt, de voortplantingssnelheid, gelijk is aan $ \omega /
+k$. Voor de absolute waarde van $v_g$ geldt dan $|v_g| = \nu \lambda$.
+
+Een 1-dimensionale golf wordt dus in het algemeen bepaald door de
+constanten $A$ en $B$, en door drie parameters $\lambda$, $\nu$ en
+$v_g$, waarvan er twee onafhankelijk zijn:
+%
+\begin{equation}
+\lambda = 2\pi / |k|, \qquad \nu = \omega / (2\pi), \qquad v_g = \omega / k = \pm \nu \lambda.
+\end{equation}
+
+\subsection{Lorentztransformaties}
+
+We veronderstellen nu dat de waarde die de amplitude $\varphi$ op een
+zeker moment op een bepaalde plaats aanneemt onafhankelijk is van het
+inertiaalsysteem waarin we ons bevinden.\footnote{Dit is niet altijd correct: electromagnetische golven
+transformeren niet triviaal onder een Lorentztransformatie. Voor nu
+kunnen we dit echter verwaarlozen.}  We kunnen dan met behulp van een
+Lorentztransformatie overgaan van het gegeven systeem $S$, met
+co\"ordinaten $x$ en $t$, naar een nieuw systeem $S'$, met $x'$ en
+$t'$. In de nieuwe co\"ordinaten wordt de golf beschreven door een
+nieuwe golffunctie
+%
+\begin{equation} \label{phi'=phi}
+\varphi'(x', t') = \varphi(x, t).
+\end{equation}
+%
+Met de formule (\ref{v:lorentz12}) voor de inverse Lorentztransformatie schrijven we 
+%
+\begin{equation} \label{phinaarphi'}
+kx - \omega t = k [\gamma (x' + \beta c t')] - \omega [\gamma (t' + \frac{\beta}{c} x')].
+\end{equation}
+%
+In systeem $S'$ heeft de golfbeweging nog steeds dezelfde vorm, maar nu  met golfgetal $k'$ en cirkelfrequentie $\omega'$. Daarmee wordt de uitdrukking voor $\varphi'$ gelijk aan 
+%
+\begin{equation}
+\varphi'(x',t') = A \sin(k'x' - \omega't')
+\end{equation}
+%
+Combineren we dit nu met formule (\ref{phi'=phi}) en (\ref{phinaarphi'}) dan zien we dat 
+%
+\begin{equation}
+k' = \gamma (k - \omega \frac{\beta}{c}) , \qquad \omega' = \gamma (\omega - \beta c k).
+\end{equation}
+%
+
+We veronderstellen nu dat we te maken hebben met een electromagnetische golf, dus een lichtgolf of een radiogolf, die zich in het vacu\"um voortplant. We nemen $k > 0$. Uit $|\beta| < c$ volgt $k' > 0$. Voor electromagnetische golven geldt $\omega = c|k|$, dus hier $\omega = ck$. Voor $k'$ hebben we dan 
+%
+\begin{equation}
+k' = \gamma (k - \omega \frac{\beta}{c}) = \gamma k (1 - \beta) = k \sqrt{\frac{1 - \beta}{1 + \beta}}
+\end{equation}
+%
+en voor $\omega'$
+%
+\begin{equation}
+\omega' = \gamma (\omega - \beta c k) = \gamma \omega (1 - \beta) = \omega \sqrt{\frac{1 - \beta}{1 + \beta}} .
+\end{equation}
+%
+Voor de gewone frequentie $\nu$ vinden we op deze wijze 
+%
+\begin{equation}
+\nu' = \frac{\omega'}{2\pi} = \frac{\omega}{2\pi}\sqrt{\frac{1 - \beta}{1 + \beta}} = \nu \sqrt{\frac{1 - \beta}{1 + \beta}}.
+\end{equation}
+%
+
+Voor $\beta > 0$ ziet een waarnemer in $S'$ het systeem $S$ van zich af bewegen. Voor $\beta < 0$ ziet hij $S$ juist naar zich toe bewegen. Volgens de relativiteitstheorie wordt dus licht met frequentie $\nu$, dat wordt uitgezonden door een lichtbron die zich van ons af beweegt, door ons waargenomen als licht met de verlaagde frequentie
+%
+\begin{equation} \label{nuDoppEff}
+\nu' = \nu  \sqrt{\frac{1 - \beta}{1 + \beta}}.
+\end{equation}
+%
+Beweegt de lichtbron naar ons toe, dan zien we de verhoogde frequentie 
+%
+\begin{equation} \label{e:doppler}
+\nu' = \nu  \sqrt{\frac{1 + |\beta|}{1 - |\beta|}}.
+\end{equation}
+%
+
+\subsection{De niet-relativistische limiet}
+
+In de alledaagse, niet-relativistische fysica treedt het
+Doppler-effect ook regelmatig op. De verandering in waargenomen
+frequentie is dan nog steeds te berekenen met behulp van formule
+(\ref{nuDoppEff}), maar we kunnen ook kijken wat het resultaat is als
+we de Galileitransformaties gebruiken in plaats van de Lorentztransformaties.
+
+We gaan opnieuw uit van een enkele golf gegeven door de formule
+(\ref{golfVerg}). Bekijken we deze vanuit de twee inertiaalsystemen
+$S$ en $S'$ dan wordt het verband tussen deze systemen nu gegeven door
+de Galileitransformatie (\ref{v:galilei1b}). Met behulp van de
+inverse van deze transformatie vinden we in plaats van formule
+(\ref{phinaarphi'})
+%
+\begin{equation}
+kx - \omega t = k(x' + vt') - \omega t' = kx' - (\omega - kv)t' .
+\end{equation}
+%
+Het golfgetal $k$ verandert niet en we vinden voor de nieuwe cirkelfrequentie 
+%
+\begin{equation}
+\omega' = \omega - kv .
+\end{equation}
+%
+Voor een electromagnetische golf met $k > 0$ wordt dit
+%
+\begin{equation}
+\omega' = \omega (1 - \beta) .
+\end{equation}
+%
+Het niet-relativistische analogon van formule (\ref{nuDoppEff}) is dus 
+%
+\begin{equation} \label{nuDoppEffClass}
+\nu' = \nu (1 - \beta) .
+\end{equation}
+%
+
+We kunnen nu de relativistische en niet-relativistische formules voor het Doppler-effect vergelijken. Als $v$ klein is ten opzichte van $c$ kunnen we de relativistische formule (\ref{nuDoppEff}) ontwikkelen naar machten van $\beta$.
+\footnote{ Dit is een zogenaamde Taylor-expansie: iedere functie $f(x)$
+kan rond het punt $x = a$ worden geschreven als
+\[
+f(x) = f(a) + f'(a) (x - a) + \frac{f''(a)}{2!} (x - a)^2 + \frac{f'''(a)}{3!} (x - a)^3 + \ldots 
+\]
+Voor een wortelfunctie met $0 \ll \alpha \ll 1$ geldt er dan
+\[
+\sqrt{1 - \alpha} = (1 - \alpha)^{1/2} = 1 + \frac{1}{2} \alpha - \frac{1}{4} \alpha^2 + \ldots...
+\]
+}
+
+We krijgen dan 
+%
+\begin{equation} \label{OntwDopp}
+\nu' = \nu \sqrt{\frac{1 - \beta}{1 + \beta}} = \nu \sqrt{1 - \frac{2 \beta}{1 + \beta}} = \nu( 1 - \beta + \frac{1}{2} \beta^2 + \ldots) .
+\end{equation}
+%
+Bij normale snelheden met $\beta \ll 1$ kunnen we de laatste term in
+deze vergelijking verwaarlozen en we zien dat we precies de
+niet-relativistische limiet bereiken van formule
+(\ref{nuDoppEffClass}): het Doppler-effect voor licht bij normale
+snelheden is zeer klein, dit in tegenstelling tot wat we bij
+geluidsgolven waarnemen.
+
+\section{Nogmaals het Doppler-effect}
+We hadden gezien dat wanneer een geluidsbron zich naar ons toe beweegt, de toonhoogte zal toenemen
+in vergelijking met de situatie waarin de bron in rust is.
+We zullen nu nogmaals het relativistische Doppler-effect laten zien.
+We hebben gezien dat voor licht per definitie de relatie $E = pc$ moet
+gelden: deze relatie geldt immers als $v = c$.
+De Lorentztransformatie voor een lichtstraal die zich in de $x$-richting
+beweegt
+ziet er dan als volgt uit (ga na):
+\begin{displaymath}
+E' = \gamma (1 - \beta) E
+\end{displaymath}
+Dit kunnen we ook schrijven als:
+\begin{displaymath}
+E' = \sqrt{\frac{1 - \beta}{1 + \beta}}E
+\end{displaymath}
+D.w.z. in co\"{o}rdinatenstelsel $S'$ dat met 
+snelheid $\beta c$ in de richting van de lichtstraal
+meebeweegt is de energie van de lichtstraal kleiner (het licht is verschoven
+naar het rood) met een factor
+$\sqrt{\frac{1 - \beta}{1 + \beta}}$,
+Omgekeerd, bewegen we met snelheid $\beta c$ naar een lichtbron toe, dan
+neemt de energie van het
+licht toe met een factor $\sqrt{\frac{1 + \beta}{1 - \beta}}$
+(het licht is verschoven naar het violet).
+Met behulp van de relatie $E = h \nu$ (de energie van een lichtquantum, een
+foton, van licht met frequentie $\nu$; $h$ is een natuurconstante, de
+constante van Planck) volgt:
+\begin{displaymath}
+\nu' =  \sqrt{\frac{1 - \beta}{1 + \beta}}\nu
+\end{displaymath}
+precies zoals we ook eerder zagen in vergelijking~\ref{e:doppler}.
+
+\section{Roodverschuiving en het uitdijende heelal}
+Het licht uitgezonden door de vele duizenden melkwegstelsels in het heelal
+blijkt verschoven te zijn naar lagere golflengtes (`roodverschuiving') t.o.v.
+wat verwacht zou worden op basis van standaard spectra.
+M.a.w. deze melkwegstelsels verwijderen zich van onze eigen Melkweg, met een
+snelheid die te bepalen is m.b.v. bovenstaande formule voor relativistische
+Dopplerverschuiving.
+Het heelal dijt uit!
+Deze observatie was een belangrijke bron van inspiratie voor de `Big Bang'
+theorie van het ontstaan van het heelal.
+

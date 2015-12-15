@@ -1,0 +1,144 @@
+\chapter{Eenheden en dimensies}
+
+In dit hoofdstuk(je) worden belangrijke afspraken gemaakt zodat we later
+natuurkundige grootheden in een zinnige vorm kunnen gieten. 
+Stof uit Giancoli:
+\begin{itemize}
+\item Hoofdstuk 1.4 en 1.7
+\end{itemize}
+
+\section{Het Systeme International}
+
+Bij elke grootheid die je uitrekent of meet moet je een afspraak maken in wat
+voor {\bf eenheid} je de meting gaat presenteren. Een meting van een gewicht
+van "5" is behoorlijk zinloos als je er niet bij vertelt of we te maken hebben met
+grammen, kilogrammen of tonnen. Op het eerste gezicht zou je kunnen denken
+dat het een onbegonnen werk is om allerhande grootheden die je in de natuur
+tegenkomt uit te drukken in hun eigen eenheid, maar het aardige is nou
+dat je de eenheden van maar een paar grootheden hoeft  vast te leggen. Als
+je bijvoorbeeld de eenheden van lengte en tijd hebt vastgelegd, dan volgt
+automatisch een eenheid voor snelheid als de eenheid van lengte gedeeld
+door de eenheid van tijd.
+
+Binnen de klassieke mechanica en ook de speciale relativiteitstheorie heb je 
+maar een paar basis eenheden nodig. De eenheden zoals wij ze gebruiken 
+zijn vastgelegd in het Systeme International - of kortweg SI systeem:
+\begin{itemize}
+\item {\bf Lengte.} De lengte van een object wordt gemeten in meter~(m). Een meter
+is gedefinieerd als de afstand afgelegd door licht in vacu\"{u}m in 1/299 792 458~seconde.
+\item {\bf Tijd.} We meten tijden in seconde, waarbij de seconde~(s) is gedefinieerd
+als de duur van 9.192.631.770 perioden van de straling horend bij de overgang tussen
+twee energieniveaus van een Cesium atoom.
+\item {\bf Massa.} Alle massa's worden gemeten in kilogram~(kg). Een kilogram is 
+gelijk aan de massa van het internationale prototype van de kilogram:)
+\end{itemize}
+Verdere SI basis-eenheden zijn er voor elektrische stroom~(Ampere), temperatuur~(Kelvin)
+hoeveelheid materie~(mol) en licht-intensiteit~(candela), maar die komen tijdens
+het college klassieke mechanica niet aan bod. Het SI systeem van eenheden wordt
+in veruit de meeste landen officieel gebruikt als standaard, met enkele uitzonderingen
+waarvan de VS de meest opmerkelijke is. Daar gebruikt men liever inches en pounds.
+
+Alle grootheden die we tegen zullen komen zijn uit te drukken in deze basis SI eenheden.
+Als je bijvoorbeeld kijkt naar een kracht, dan weten we dat deze wordt gemeten in Newton
+of simpelweg $N$. Aangezien we weten dat $\vec{F}=m\vec{a}$, kunnen we direct zien 
+dat de eenheid $N$ uit te drukken is in $\mbox{kg}\cdot\mbox{m}\cdot\mbox{s}^{-2}$. En
+dergelijke relaties gelden voor alle grootheden die we tegen zullen komen. Zodra je
+een vraagstuk krijgt waarbij er een antwoord in de vorm van een getal uit moet komen
+(in plaats van een formule) dan wordt verwacht dat er een eenheid bij dat getal
+staat. Anders heeft je antwoord geen betekenis.
+
+\section{Dimensie analyse}
+
+Een krachtig middel om fouten in een berekening op te sporen is het toepassen van 
+een dimensie analyse. Als je een formule presenteert weet je dat aan beide kanten
+van het "=" teken grootheden staan met dezelfde eenheden. Laten we eens kijken
+naar een vergelijking die een verband maakt tussen de positie, $x$ van een object en
+zijn snelheid, $v$, als functie van de tijd, $t$. ({\it zoals je kan zien is de relatie evident fout!}):
+\begin{equation}\label{eq:dim1}
+x =  v\,t^2  
+\end{equation}
+Laten we aannemen dat we weten dat snelheid de eenheid heeft van lengte gedeeld 
+door tijd. Dus:
+\begin{equation}
+[v]=[L][T]^{-1}
+\end{equation}
+De vierkante haakjes geven aan dat we het over de dimensie van een grootheid hebben. 
+De dimensie van snelheid is dus de dimensie van lengte aangegeven door [L] maal
+de dimensie van 1/tijd, $[T]^{-1}$. Als we dit invullen in vgl.~\ref{eq:dim1} een 
+redelijkerwijs aannemen dat de dimensie van $x$ wordt gegeven door $[L]$dan krijgen 
+we de volgende dimensie vergelijking:
+\begin{equation}
+[L] \neq [L][T]^{-1}[T]^{2}= [L][T] 
+\end{equation}
+Aangezien de dimensies aan beide kanten van het gelijkteken niet hetzelfde zijn kan de 
+vergelijking dus niet juist zijn. Dit is natuurlijk een lachwekkend eenvoudig geval, maar
+een dimensie analyse werkt altijd. Het is trouwens wel zo dat je een beetje moet oppassen
+met een dimensie analyse: je kan er alleen mee zien of een antwoord zou kunnen kloppen. 
+Als je als antwoord voor plaats als functie van tijd zoals hierboven $x=3v\,t$ had gevonden
+zijn de dimensies prima in orde terwijl het antwoord toch niet juist is. 
+
+Het zal duidelijk zijn dat een dimensie analyse alleen mogelijk is als je een antwoord hebt
+uitgedrukt in symbolen behorend bij de relevante grootheden in plaats van in gewone getallen. 
+Naast het feit dat uitdrukkingen in symbolen veel duidelijker zijn en algemener toepasbaar
+zijn, zijn ze dus ook nog eens eenvoudiger op juistheid te controleren. De docent van dit vak
+heeft dan ook een sterke voorkeur voor het uitdrukken van antwoorden in symbolen. En de
+docenten van andere vakken ook!
+
+\begin{center}
+\line(1,0){250}
+\end{center}
+\begin{voorbeeld} 
+\label{ex:dimensie}
+Twee studenten hebben bepaald dat voor de slingertijd $t$ van een slinger
+de lengte $l$ en de zwaartekrachtsversnelling (met dimensie $[L][T]^{-2}$) de 
+relevante grootheden zijn. Student~1 zegt dat de $t=\sqrt{l/g}$ terwijl student~2
+stelt dat $t=\sqrt{g/l}$. Wie zou er gelijk kunnen hebben?
+{\bf Oplossing: }{\it De dimensie voor het antwoord van student~1 is $\sqrt{[L]/([L]/[T]^2)}=[T]$
+en de dimensie voor het antwoord van student~2 is $\sqrt{([L]/[T]^2)/[L]}=[T]^{-1}$. Student~1
+zou het dus bij het rechte eind kunnen hebben. Student~2 zit er hoe dan ook naast met
+zijn antwoord.
+ }
+\end{voorbeeld}
+\begin{center}
+\line(1,0){250}
+\end{center}
+
+Een andere plek waar een dimensie analyse handig is, is wanneer je een antwoord 
+vindt op een vraagstuk in termen van sinussen, cosinussen, e-machten of andere functies.
+Het argument van een dergelijke functie {\it kan} alleen maar juist zijn indien het geen dimensie
+heeft.  Laten we de e-macht, $\exp x$  maar eens als voorbeeld nemen. Voor kleine
+waarden van $x$ kan deze functie benaderd worden door:
+\begin{equation}
+\exp x \approx 1 + x 
+\end{equation}
+Als $x$ nu een dimensie heeft bijvoorbeeld $[x] = [L]$ dan zie je aan de benadering van
+de e-macht  dat je een stuk zonder dimensie "1" optelt bij een grootheid met dimensie $[L]$. Dat
+kan natuurlijk nooit een fysisch juist antwoord opleveren.  Voor sinussen, cosinussen en 
+vele andere functies bestaan ook dergelijke benaderingen en dus gelden daarvoor precies
+dezelfde argumenten als het gaat om dimensie analyse.
+
+\section{Wat moet ik weten en kunnen?}
+
+Je moet na dit introducerende hoofdstuk weten:
+\begin{itemize}
+\item Wat is het SI systeem.
+\item Wat zijn de eenheden van massa, lengte en tijd.
+\end{itemize}
+En wat moet je kunnen:
+\begin{itemize}
+\item Eenheden van veel voorkomende grootheden zelf bepalen.
+\item Een dimensie analyse uitvoeren om te controleren of je een 'geloofwaardig' antwoord
+op een vraagstuk hebt gevonden. 
+\end{itemize}
+
+\section{Opdrachten}
+
+\begin{enumerate}
+\item Opgaven uit Giancoli hoofdstuk~1: 35 t/m 38
+\item Als de dimensieanalyse aangeeft dat je antwoord niet fout hoeft te zijn, waarom betekent
+dat niet automatisch dat je antwoord goed is?
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EINDE EENHEDEN en DIMENSIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

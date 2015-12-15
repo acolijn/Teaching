@@ -1,0 +1,155 @@
+\input header
+
+% new commands
+\newcommand{\ihat}{\ensuremath{\hat{i}~}}
+\newcommand{\jhat}{\ensuremath{\hat{j}~}}
+\newcommand{\khat}{\ensuremath{\hat{k}~}}
+
+\newcommand{\dr}{\ensuremath{\Delta\vec{r}~}}
+\newcommand{\dv}{\ensuremath{\Delta\vec{v}~}}
+\newcommand{\dt}{\ensuremath{\Delta t~}}
+\newcommand{\sint}{\ensuremath{\sin\theta~}}
+\newcommand{\cost}{\ensuremath{\cos\theta~}}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+% graphics path
+\graphicspath{
+              {SRT/figures/}
+              {KM/figures/} 
+             }
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\chaptername}{Hoofdstuk}
+\renewcommand{\partname}{Deel}
+\renewcommand{\figurename}{Figuur}
+\renewcommand{\contentsname}{Inhoud}
+\renewcommand{\tablename}{Tabel}
+% typedef for voorbeelden
+\theoremstyle{definition}
+\newtheorem{voorbeeld}{Voorbeeld}[chapter]
+% 
+\newtheorem*{Newton1}{Newton's eerste wet}
+\newtheorem*{Newton2}{Newton's tweede wet}
+\newtheorem*{Newton3}{Newton's derde wet}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\hyphenation{zwaar-te-krachts-wet}
+\hyphenation{richtings}
+\hyphenation{me-cha-ni-ca}
+\hyphenation{ver-ge-lij-king}
+\hyphenation{op-le-ve-ren}
+\hyphenation{bij-dra-ge}
+\hyphenation{re-la-ti-vi-teits-theo-rie}
+\hyphenation{twee-ling}
+\hyphenation{na-tuur-lijk}
+\hyphenation{e-qui-va-len-te}
+\hyphenation{be-schrij-ven}
+\hyphenation{woor-den}
+\hyphenation{in-e-las-tische}
+\hyphenation{bot-sing}
+\hyphenation{Kos-mi-sche}
+\hyphenation{twee-di-men-si-o-naal}
+\hyphenation{twee-di-men-si-o-na-le}
+\hyphenation{oor-di-na-ten-stel-sel}
+\hyphenation{rich-tings-co-ef-fi}
+\hyphenation{e-lek-tro-mag-ne-ti-sche}
+\hyphenation{co-or-di-na-ten-stel-sel}
+\hyphenation{di-na-ten-stel-sel}
+\hyphenation{af-lei-ding}
+\hyphenation{bij-voor-beeld}
+\hyphenation{re-la-ti-vi-teits-theo-rie}
+\hyphenation{voor-werp}
+\hyphenation{ant-woord}
+\hyphenation{na-tuur-kun-de}
+\hyphenation{ver-schijn-se-len}
+\hyphenation{dui-de-lij-ke}
+\hyphenation{be-kend}
+\hyphenation{ge-lijk-tij-dig-heid}
+\hyphenation{ver-ras-sen-de}
+\hyphenation{mar-ke-ren}
+\hyphenation{ex-pe-ri-men-ten}
+\hyphenation{co-or-di-na-ten-stel-sel}
+\hyphenation{rechts-han-di-ge}
+\hyphenation{na-tuur-kun-dig}
+\hyphenation{bij-ge-werkt}
+\hyphenation{re-la-ti-vi-teits-prin-ci-pe}
+\hyphenation{heel-al le-vens-duur}
+\hyphenation{waar-ge-no-men}
+
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{titlepage}
+\begin{center}
+\includegraphics[width=\textwidth]{./UvAlogo}\\[0.5cm] 
+\begin{flushleft}
+\includegraphics[width=0.55\textwidth]{./vu-logo-nl-white}\\[3.5cm] 
+\end{flushleft}
+
+% Title
+\HRule \\[0.4cm]
+{ \huge \bfseries Klassieke Mechanica \\[0.0cm]  en  \\[0.4cm] Speciale Relativiteits Theorie} \\[0.4cm]
+\HRule \\
+\vfill
+
+% Author and supervisor
+\HRule \\[0.1cm]
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+A.P. \textsc{Colijn}
+\newline
+K.S.E. \textsc{Eikema}
+\end{flushleft}
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+IoP \textsc{IHEF}
+\newline
+LaserLaB VU / ARCNL
+\end{flushright}
+\end{minipage}
+
+
+\HRule \\[0.4cm]
+{\large \today}
+\end{center}
+\end{titlepage}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\tableofcontents
+
+% include the conte
+\include{Inleiding}
+
+\part{Klassieke Mechanica}
+\include{KM/Eenheden}
+\include{KM/Beweging3D}
+\include{KM/Newton}
+\include{KM/Cirkelbeweging}
+\include{KM/Energie}
+\include{KM/Impuls}
+\include{KM/Impulsmoment}
+\include{KM/Gravitatie}
+\include{KM/Evenwicht}
+
+\part{Speciale Relativiteits Theorie}
+
+\include{SRT/Inleiding}
+\include{SRT/Galilei}         % 26-03-2011 APC - polished plots
+\include{SRT/TijdLengte}	% 26-03-2011 APC - polished plots	% + Gamma factor grafiek ingevoegd
+\include{SRT/Lorentz}       % 26-03-2011 APC - polished plots % + Sect 4.1:: fig4.1: Bolvormige lichtgolf. 
+\include{SRT/Vierdim}       % 26-03-2011 APC - polished plots									%+
+% \include{SRT/Viervectoren}							%+
+% \include{SRT/Mechanica}                 % eerste deel H6
+\include{SRT/Relativistische_mechanica} % 26-03-2011 APC - polished plots laatste deel H6 // moet nog een "quote" in.
+\include{SRT/pdfDoppler}                % samengevoegd uit: sect. 5.4  en sect. 7.5  // moet nog een klassieke doppler vgl bij? // moet nog een "quote" in.
+\include{SRT/Toepassingen}
+%\include{Impuls}                   % oorspronkelijk niet in "Syll2007"
+%%\include{EM}
+%\clearpage
+%\include{SRT/Appendix}                  % in plaats van in "Opgaven_2009"
+
+
+\end{document}
