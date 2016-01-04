@@ -1,0 +1,155 @@
+%
+% OEFENINGEN 2009
+%
+  %\documentstyle[11pt,epsfig]{article}
+  %\documentclass[chap,11pt,a4paper]{book}
+  %\documentclass[art,11pt,a4paper]{article}
+  
+%\documentclass[12pt,twoside,a4paper,pdftex,dutch]{article}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                          %%
+%%  LaTeX => PS => PDF !!!  %%
+%%                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[12pt,twoside,a4paper,dutch]{article}
+
+\hyphenation{Galilei-transformatie Galilei-transformaties Lorentz-transformatie Lorentz-transformaties}
+
+\usepackage[dutch]{babel}
+\usepackage{epsf}
+\usepackage{axodraw}   
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+%
+%       Loosen up LaTeX float placement
+%
+\renewcommand{\textfraction}{0.15}
+\renewcommand{\topfraction}{0.85}
+\renewcommand{\bottomfraction}{0.65}
+\renewcommand{\floatpagefraction}{0.60}
+
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{titlepage}
+%\begin{center}
+%\includegraphics[width=\textwidth]{./UvAlogo}\\[3.5cm] 
+%% Title
+%\HRule \\[0.4cm]
+%{ \huge \bfseries Oefeningen Speciale Relativiteitstheorie} \\[0.4cm]
+%\HRule \\
+%\vfill
+%
+%% Author and supervisor
+%\HRule \\[0.1cm]
+%\begin{minipage}{0.4\textwidth}
+%\begin{flushleft} \large
+%A.P. \textsc{Colijn}
+%\end{flushleft}
+%\end{minipage}
+%\begin{minipage}{0.4\textwidth}
+%\begin{flushright} \large
+%IoP \textsc{IHEF}
+%\end{flushright}
+%\end{minipage}
+%\HRule \\[0.4cm]
+%{\large \today}
+%\end{center}
+%\end{titlepage}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{center}
+{\Large\textsc{Faculteit der Natuurwetenschappen, \\ Wiskunde en Informatica}}
+\\[4cm]
+{\Huge\bf Oefeningen \\ Speciale Relativiteitstheorie}
+\\[1cm]
+{\large dr. A.P. Colijn}
+\\[0.1cm]
+UvA / NIKHEF
+\\[0.1cm]  
+Onderzoeksinstituut Hoge Energie Fysica (IHEF) 
+\\[6.5cm]
+\end{center}
+
+%\begin{figure}[ht]
+%	\centering
+%		\includegraphics[width=0.10\textwidth]{logo_uva2.PNG}
+%	\label{fig:Uvalogo2}
+%\end{figure}
+%\begin{center}
+%{\Large\textsc{Universiteit van Amsterdam}}
+\normalsize
+
+\begin{figure}[ht]
+	\centering
+		\includegraphics[width=0.5\textwidth]{oefeningen.pictures/UVA}
+	\label{fig:UVA}
+\end{figure}
+%
+
+
+
+\thispagestyle{empty}
+\newpage
+\thispagestyle{empty}
+\newpage
+\cleardoublepage
+
+\title{\Huge\bf Oefeningen \\ Speciale Relativiteitstheorie}
+\author{\large dr. A.P. Colijn\\[0.1cm]
+UvA / NIKHEF\\[0.1cm]  
+Onderzoeksinstituut Hoge Energie Fysica (IHEF) \\[0.5cm]
+gebaseerd op de syllabus van Prof. S. Bentvelsen\\[0.1cm]
+gebaseerd op de syllabus van Prof. J.J. Engelen\\[0.1cm]
+met medewerking van \\[0.1cm]
+drs. B. Mooij en B. Elsinga BSc\\[1.0cm]
+versie 7.0, augustus 2012}
+
+%\begin{figure}[ht]
+%	\centering
+%		\includegraphics[width=0.5\textwidth]{UVA}
+%	\label{fig:UVA}
+%\end{figure}
+
+\date{}
+\maketitle 
+\thispagestyle{empty}
+\cleardoublepage
+
+
+%table of contents
+\pagestyle{plain}
+\pagenumbering{roman}
+\setcounter{page}{1}
+\tableofcontents
+\cleardoublepage
+
+% Hoofdtekst
+\pagestyle{headings}
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\include{Galilei}         %bijgewerkt 22:32-15/01/2009
+\include{RuimteTijd}      %bijgewerkt 22:39-15/01/2009
+\include{Lorentz}					%bijgewerkt 14:27-17/01/2009  + extra
+\include{Consequenties}		%bijgewerkt 21:00-16/01/2009
+\include{Minkowski}				%bijgewerkt 15:15-17/01/2009  + extra  
+\include{Impuls}					%bijgewerkt 13:28-17/01/2009  - krachtveld
+\include{Toepassingen}		%bijgewerkt 16:28-17/01/2009  + extra
+\include{Doppler}					%bijgewerkt 17:02-17/01/2009
+% \include{Dynamica}
+\include{Productie}				%bijgewerkt 17:07-17/01/2009
+%\include{Appendix}				%in Syllabus_2009
+% \include{EM}
+
+\end{document}
